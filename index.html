@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sravya Nadipineni | Data Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Particles Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">Sravya</div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button class="resume-btn">
+                    <span>📥</span> Resume
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in-up">
+                    <span class="gradient-text">Sravya</span>
+                    <br>
+                    <span>Nadipineni</span>
+                </h1>
+                <p class="hero-subtitle animate-fade-in-up" style="animation-delay: 0.1s;">Data Engineer | ETL/ELT Specialist</p>
+                <p class="hero-description animate-fade-in-up" style="animation-delay: 0.2s;">
+                    4+ years crafting scalable data pipelines, data lakes, and real-time streaming solutions. Specialized in AWS and Azure cloud infrastructure optimization. Transforming complex data challenges into elegant technical solutions.
+                </p>
+                <div class="hero-buttons animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <button class="btn btn-primary">
+                        <span>✉️</span> Get in Touch
+                    </button>
+                    <button class="btn btn-secondary">
+                        <span>📥</span> Download Resume
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title gradient-text">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a Data Engineer with a passion for building enterprise-scale data solutions that drive business impact. My expertise spans ETL/ELT pipeline design, big data processing, and cloud infrastructure optimization.</p>
+                    <p>Currently at The Canton Group, I design and maintain scalable data pipelines while optimizing performance and implementing robust data governance frameworks. I thrive on translating complex business requirements into elegant technical solutions.</p>
+                    <p>When I'm not engineering data solutions, I'm exploring emerging technologies in the data ecosystem and contributing to open-source projects.</p>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card glass">
+                        <h3>📍 Location</h3>
+                        <p>Houston, Texas, USA</p>
+                    </div>
+                    <div class="info-card glass">
+                        <h3>📞 Contact</h3>
+                        <p>346-446-0634</p>
+                        <p>nadipinenisravya.com</p>
+                    </div>
+                    <div class="info-card glass">
+                        <h3>🎓 Education</h3>
+                        <p>Master's in MIS (Lamar University)</p>
+                        <p class="cgpa">CGPA: 3.8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="4">0</div>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="50">0</div>
+                    <p>Data Pipelines Built</p>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="30">0</div>
+                    <p>Performance Improvement %</p>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="100">0</div>
+                    <p>Data Quality Score %</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title gradient-text">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category glass">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>Big Data</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Apache Spark</span>
+                        <span class="skill-tag">Databricks</span>
+                        <span class="skill-tag">Hadoop</span>
+                        <span class="skill-tag">Kafka</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>Cloud Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">AWS</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>Azure Services</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Azure Data Factory</span>
+                        <span class="skill-tag">Azure Data Lake</span>
+                        <span class="skill-tag">ADLS</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>AWS Services</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS Glue</span>
+                        <span class="skill-tag">S3</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>Data Engineering</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ETL/ELT</span>
+                        <span class="skill-tag">Data Modeling</span>
+                        <span class="skill-tag">Data Lakes</span>
+                        <span class="skill-tag">Data Warehousing</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>Streaming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Apache Kafka</span>
+                        <span class="skill-tag">Spark Streaming</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>Orchestration</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Airflow</span>
+                        <span class="skill-tag">ADF</span>
+                        <span class="skill-tag">Step Functions</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>Dev Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>BI Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">SSRS</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>Other</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Governance</span>
+                        <span class="skill-tag">Data Quality</span>
+                        <span class="skill-tag">Performance Optimization</span>
+                        <span class="skill-tag">Agile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title gradient-text">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-card glass">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Data Engineer</h3>
+                            <p class="company">The Canton Group</p>
+                            <p class="location">Baltimore, Maryland</p>
+                        </div>
+                        <span class="period">01/2025 – Present</span>
+                    </div>
+                    <ul class="highlights">
+                        <li>Designed and maintained scalable ETL/ELT pipelines in Azure Databricks and AWS</li>
+                        <li>Optimized Spark and Databricks jobs improving pipeline performance by 30%+</li>
+                        <li>Built real-time and batch data pipelines using Kafka and Spark Streaming</li>
+                        <li>Developed complex SQL transformations and implemented data quality controls</li>
+                    </ul>
+                </div>
+                <div class="experience-card glass">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Data Engineer</h3>
+                            <p class="company">Tata Consultancy Services</p>
+                            <p class="location">Hyderabad, India</p>
+                        </div>
+                        <span class="period">03/2022 – 12/2023</span>
+                    </div>
+                    <ul class="highlights">
+                        <li>Developed end-to-end ETL pipelines using Spark, Azure Data Factory, and AWS services</li>
+                        <li>Tuned and optimized ETL workflows handling high-volume datasets</li>
+                        <li>Wrote complex SQL queries integrating data from multiple sources</li>
+                        <li>Implemented data validation, governance, and security frameworks</li>
+                    </ul>
+                </div>
+                <div class="experience-card glass">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Data Engineer - Intern</h3>
+                            <p class="company">Wipro</p>
+                            <p class="location">Hyderabad, India</p>
+                        </div>
+                        <span class="period">01/2021 – 12/2021</span>
+                    </div>
+                    <ul class="highlights">
+                        <li>Assisted in building ETL pipelines using Python and SQL</li>
+                        <li>Performed data cleansing, transformation, and validation</li>
+                        <li>Integrated multi-source data into cloud-based data lakes</li>
+                        <li>Created technical documentation for ETL workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+        <div class="container">
+            <h2 class="section-title gradient-text">Education</h2>
+            <div class="education-grid">
+                <div class="education-card glass">
+                    <h3>Master's in Management Information Systems</h3>
+                    <p class="school">Lamar University</p>
+                    <div class="edu-footer">
+                        <span>01/2024 - 05/2025</span>
+                        <span class="cgpa">CGPA: 3.8</span>
+                    </div>
+                </div>
+                <div class="education-card glass">
+                    <h3>Bachelor's in Computer Science</h3>
+                    <p class="school">JNTUH</p>
+                    <div class="edu-footer">
+                        <span>08/2017 - 05/2021</span>
+                        <span class="cgpa">CGPA: 7.1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title gradient-text">Academic Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <h3>Privacy Preserving Multi-Keywords Search</h3>
+                    <p>Designed encrypted search and indexing system for secure cloud data retrieval. Improved search accuracy while maintaining data confidentiality.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">SQL</span>
+                        <span class="tech-badge">AWS</span>
+                        <span class="tech-badge">GCP</span>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <h3>Face Image Recognition System</h3>
+                    <p>Built automated face recognition workflow using Python and OpenCV. Processed large image datasets for real-time identification.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">SQL</span>
+                        <span class="tech-badge">OpenCV</span>
+                        <span class="tech-badge">Deep Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title gradient-text">Let's Connect</h2>
+            <p class="contact-description">I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hello, feel free to reach out!</p>
+            <div class="contact-buttons">
+                <button class="btn btn-primary">
+                    <span>✉️</span> Email Me
+                </button>
+                <button class="btn btn-secondary">
+                    <span>💼</span> Visit LinkedIn
+                </button>
+                <button class="btn btn-secondary">
+                    <span>📥</span> Download Resume
+                </button>
+            </div>
+            <div class="contact-info glass">
+                <p>📧 <span class="cyan">nadipinenisravya@gmail.com</span> | 📱 <span class="purple">346-446-0634</span> | 🌐 <span class="lime">nadipinenisravya.com</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Sravya Nadipineni. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
