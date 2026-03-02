@@ -186,8 +186,8 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--secondary);
 }
 
-.resume-btn {
-    background: linear-gradient(135deg, #a855f7, #06b6d4);
+.linkedin-btn {
+    background: linear-gradient(135deg, #0a66c2, #0077b5);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -196,11 +196,15 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     transition: var(--transition);
     font-size: 0.875rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.resume-btn:hover {
+.linkedin-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(168, 85, 247, 0.3);
+    box-shadow: 0 10px 25px rgba(10, 102, 194, 0.3);
 }
 
 /* ==================== HERO SECTION ==================== */
@@ -274,6 +278,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     gap: 0.5rem;
     font-size: 1rem;
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -626,6 +631,15 @@ section {
     color: var(--text-muted);
 }
 
+.contact-card {
+    padding: 2rem;
+}
+
+.contact-card p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
 .cyan {
     color: var(--secondary);
 }
@@ -639,39 +653,16 @@ section {
 }
 
 /* ==================== FOOTER ==================== */
-.footer {
+footer {
     border-top: 1px solid var(--border-color);
     padding: 2rem 0;
     background: rgba(30, 41, 59, 0.3);
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.footer-content p {
+footer p {
     color: var(--text-muted);
     font-size: 0.875rem;
-}
-
-.footer-links {
-    display: flex;
-    gap: 2rem;
-}
-
-.footer-links a {
-    color: var(--text-muted);
-    text-decoration: none;
-    font-size: 0.875rem;
-    transition: var(--transition);
-}
-
-.footer-links a:hover {
-    color: var(--secondary);
+    text-align: center;
 }
 
 /* ==================== RESPONSIVE ==================== */
@@ -690,10 +681,5 @@ section {
 
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
     }
 }
